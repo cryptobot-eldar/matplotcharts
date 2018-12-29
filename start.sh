@@ -48,5 +48,8 @@ else
     python /usr/local/bin/chart_creator4.py
 fi
 
+
+
+
 sleep 10
 done
