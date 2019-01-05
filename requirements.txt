@@ -1,5 +1,5 @@
-numpy
-matplotlib
-sqlalchemy
-pymysql
-pandas
+numpy==1.14.0
+matplotlib==1.2.0
+sqlalchemy==0.9.8
+pymysql==0.8.0
+pandas==0.22.0
