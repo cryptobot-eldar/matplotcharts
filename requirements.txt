@@ -2,4 +2,4 @@ numpy
 matplotlib
 sqlalchemy
 pymysql
-pandas 
+pandas
