@@ -49,6 +49,16 @@ else
 fi
 
 
+SERVICE4='chart_creator5.py'
+
+if ps ax | grep -v grep | grep $SERVICE4 > /dev/null
+then
+    echo "$SERVICE4 service running "
+else
+    echo there is no such "$SERVICE4 service, starting"
+    python /usr/local/bin/chart_creator5.py
+fi
+
 
 
 sleep 10
