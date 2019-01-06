@@ -6,7 +6,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 
-with open('out8.csv', 'r') as myfile:
+with open('data/out8.csv', 'r') as myfile:
     market=myfile.read().splitlines()
 
 #with open('out9.csv', 'r') as myfile:
