@@ -13,37 +13,37 @@ with open('out8.csv', 'r') as myfile:
 #    signals=map(int, myfile)
 
 
-with open('out10.csv', 'r') as myfile:
+with open('data/out10.csv', 'r') as myfile:
     max_loss_3=map(float, myfile)
 
 
-with open('out11.csv', 'r') as myfile:
+with open('data/out11.csv', 'r') as myfile:
     max_loss_0=map(float, myfile)
 
 
-with open('out12.csv', 'r') as myfile:
+with open('data/out12.csv', 'r') as myfile:
     max_loss_1=map(float, myfile)
 
 
-with open('out13.csv', 'r') as myfile:
+with open('data/out13.csv', 'r') as myfile:
     max_loss_2=map(float, myfile)
 
-with open('out14.csv', 'r') as myfile:
+with open('data/out14.csv', 'r') as myfile:
     max_loss_4=map(float, myfile)
 
-with open('out15.csv', 'r') as myfile:
+with open('data/out15.csv', 'r') as myfile:
     max_loss_5=map(float, myfile)
 
 
-with open('out16.csv', 'r') as myfile:
+with open('data/out16.csv', 'r') as myfile:
     max_loss_6=map(float, myfile)
 
 
-with open('out17.csv', 'r') as myfile:
+with open('data/out17.csv', 'r') as myfile:
     max_loss_7=map(float, myfile)
 
 
-with open('out-max.csv', 'r') as myfile:
+with open('data/out-max.csv', 'r') as myfile:
     max_loss=map(float, myfile)
     max_val= max(max_loss)
 

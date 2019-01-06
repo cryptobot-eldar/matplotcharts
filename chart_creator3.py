@@ -6,16 +6,16 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 
-with open('out5.csv', 'r') as myfile:
+with open('data/out5.csv', 'r') as myfile:
     #market=myfile.read().replace('\n', ' ')
     market=myfile.read().splitlines()
 
-with open('out6.csv', 'r') as myfile:
+with open('data/out6.csv', 'r') as myfile:
     #profit=myfile.read().replace('\n', ' ')
     #profit=myfile.read().splitlines()
     profit = map(float, myfile)
 
-with open('out7.csv', 'r') as myfile:
+with open('data/out7.csv', 'r') as myfile:
     #profit=myfile.read().replace('\n', ' ')
     #profit=myfile.read().splitlines()
     count = map(int, myfile)
