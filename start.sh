@@ -1,6 +1,17 @@
 #!/bin/bash
 #exec &>>/var/log/work.log
 
+if [ -e /usr/local/bin/view.py ]
+then
+    mv view.py /var/www/cgi-bin/
+    chmod 755 /var/www/cgi-bin/view.py
+else
+    echo "file already moved"
+fi
+
+
+
+
 while true
 do
 SERVICE0='chart_creator.py'
