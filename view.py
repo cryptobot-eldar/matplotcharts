@@ -10,7 +10,7 @@ cgitb.enable()
 
 
 # Connect to MySQL database
-db = MySQLdb.connection(host="127.0.0.1",
+db = MySQLdb.connection(host="database-service",
                 user="cryptouser",
                 passwd="123456",
                 db="cryptodb")
