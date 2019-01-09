@@ -9,6 +9,7 @@ else
     echo "file already moved"
 fi
 
+/usr/sbin/httpd
 
 
 
