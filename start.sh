@@ -3,8 +3,8 @@
 
 if [ -e /usr/local/bin/view.py ]
 then
-    mv view.py /var/www/cgi-bin/
-    chmod 755 /var/www/cgi-bin/view.py
+    mv view.py /var/www/cgi-bin/index.py
+    chmod 755 /var/www/cgi-bin/index.py
 else
     echo "file already moved"
 fi
