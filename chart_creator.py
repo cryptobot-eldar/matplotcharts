@@ -24,12 +24,12 @@ df = pd.read_sql_query('SELECT serf FROM statistics', engine)
 #cols.insert(0, cols.pop(cols.index('day')))
 #df = df.reindex(columns=cols)
 
-df.to_csv('out.csv', header=None, sep=' ')
+df.to_csv('data/out.csv', header=None, sep=' ')
 
 print df
 
 #days, summ = np.loadtxt("out.csv", unpack=True, converters={ 0: mdates.strpdate2num('%Y-%m-%d %H:%M')})
-days, summ = np.loadtxt("out.csv", unpack=True)
+days, summ = np.loadtxt("data/out.csv", unpack=True)
 
 x=days
 y=summ
