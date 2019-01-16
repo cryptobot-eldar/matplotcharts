@@ -1,10 +1,10 @@
 #!/bin/bash
 #exec &>>/var/log/work.log
 
-if [ -e /usr/local/bin/view.py ]
+if [ -e /usr/local/bin/index.php ]
 then
-    mv view.py /var/www/cgi-bin/index.py
-    chmod 755 /var/www/cgi-bin/index.py
+    mv index.php /var/www/html/index.php
+    chmod 755 /var/www/html/index.php
 else
     echo "file already moved"
 fi
