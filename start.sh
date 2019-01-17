@@ -17,59 +17,39 @@ while true
 do
 SERVICE0='chart_creator.py'
 
-if ps ax | grep -v grep | grep $SERVICE0 > /dev/null
-then
-    echo "$SERVICE0 service running "
-else
-    echo there is no such "$SERVICE0 service, starting"
-    python /usr/local/bin/chart_creator.py
-fi
+ps -ef | grep $SERVICE0 | grep -v grep
+[ $?  -eq "0" ] && echo "$SERVICE0 process is running" || echo "$SERVICE0 process is not running, starting"; python /usr/local/bin/chart_creator.py
+
 
 
 
 SERVICE1='chart_creator2.py'
 
-if ps ax | grep -v grep | grep $SERVICE1 > /dev/null
-then
-    echo "$SERVICE1 service running "
-else
-    echo there is no such "$SERVICE1 service, starting"
-    python /usr/local/bin/chart_creator2.py
-fi
+ps -ef | grep $SERVICE1 | grep -v grep
+[ $?  -eq "0" ] && echo "$SERVICE1 process is running" || echo "$SERVICE1 process is not running, starting"; python /usr/local/bin/chart_creator2.py
+
 
 
 
 SERVICE2='chart_creator3.py'
 
-if ps ax | grep -v grep | grep $SERVICE2 > /dev/null
-then
-    echo "$SERVICE2 service running "
-else
-    echo there is no such "$SERVICE2 service, starting"
-    python /usr/local/bin/chart_creator3.py
-fi
+ps -ef | grep $SERVICE2 | grep -v grep
+[ $?  -eq "0" ] && echo "$SERVICE2 process is running" || echo "$SERVICE2 process is not running, starting"; python /usr/local/bin/chart_creator3.py
+
+
 
 
 SERVICE3='chart_creator4.py'
 
-if ps ax | grep -v grep | grep $SERVICE3 > /dev/null
-then
-    echo "$SERVICE3 service running "
-else
-    echo there is no such "$SERVICE3 service, starting"
-    python /usr/local/bin/chart_creator4.py
-fi
+ps -ef | grep $SERVICE3 | grep -v grep
+[ $?  -eq "0" ] && echo "$SERVICE3 process is running" || echo "$SERVICE3 process is not running, starting"; python /usr/local/bin/chart_creator4.py
+
 
 
 SERVICE4='chart_creator5.py'
 
-if ps ax | grep -v grep | grep $SERVICE4 > /dev/null
-then
-    echo "$SERVICE4 service running "
-else
-    echo there is no such "$SERVICE4 service, starting"
-    python /usr/local/bin/chart_creator5.py
-fi
+ps -ef | grep $SERVICE4 | grep -v grep
+[ $?  -eq "0" ] && echo "$SERVICE4 process is running" || echo "$SERVICE4 process is not running, starting"; python /usr/local/bin/chart_creator5.py
 
 
 
