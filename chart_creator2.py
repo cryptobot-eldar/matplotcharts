@@ -36,7 +36,7 @@ ax.set_xticklabels(market, fontsize=10, rotation=90)
 ax.legend()
 fig.tight_layout()
 plt.grid(True)
-plt.savefig('/var/www/cgi-bin/crypto_results2.png', bbox_inches='tight')
+plt.savefig('/var/www/html/images/crypto_results2.png', bbox_inches='tight')
 #plt.savefig('/root/PycharmProjects/cryptobot/webinterface/static/crypto_results2.png', bbox_inches='tight')
 plt.show()
 
