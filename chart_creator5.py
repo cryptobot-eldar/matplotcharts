@@ -37,5 +37,10 @@ ax.legend()
 fig.tight_layout()
 plt.grid(True)
 plt.savefig('/var/www/html/images/crypto_results5.png')
-#plt.savefig('/root/PycharmProjects/cryptobot/webinterface/static/crypto_results5.png')
+plt.savefig('/root/PycharmProjects/cryptobot/images/crypto_results5.png')
 plt.show()
+
+
+
+
+

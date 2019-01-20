@@ -26,8 +26,8 @@ fig, ax = plt.subplots()
 index = np.arange(n_groups)
 bar_width = 0.35
 opacity = 0.4
-rects1 = ax.bar(index, profit, bar_width, alpha=opacity, color='g',label='AI predictions')
-rects2 = ax.bar(index + bar_width, count, bar_width, alpha=opacity, color='r',label='Trades')
+rects1 = ax.bar(index, profit, bar_width, alpha=opacity, color='g',label='Successfull AI predictions')
+rects2 = ax.bar(index + bar_width, count, bar_width, alpha=opacity, color='r',label='AI predictions')
 ax.set_xlabel("Markets", fontsize=15)
 ax.set_ylabel("AI successfull predictions", fontsize=15 )
 ax.set_title("AI chart")
@@ -37,7 +37,7 @@ ax.legend()
 fig.tight_layout()
 plt.grid(True)
 plt.savefig('/var/www/html/images/crypto_results3.png')
-#plt.savefig('/root/PycharmProjects/cryptobot/webinterface/static/crypto_results3.png')
+plt.savefig('/root/PycharmProjects/cryptobot/images/crypto_results3.png')
 plt.show()
 
 

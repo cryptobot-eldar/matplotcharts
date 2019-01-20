@@ -37,9 +37,9 @@ y=summ
 
 plt.plot(x, y, c='r')
 plt.title("Cryptobot chart")
-plt.ylabel("USD")
+plt.ylabel("%")
 plt.xlabel("Trades")
 plt.grid(True)
 plt.savefig('/var/www/html/images/crypto_results.png', bbox_inches='tight')
-#plt.savefig('/root/PycharmProjects/cryptobot/webinterface/static/crypto_results.png', bbox_inches='tight')
-plt.show()
+plt.savefig('/root/PycharmProjects/cryptobot/images/crypto_results.png', bbox_inches='tight')
+#plt.show()

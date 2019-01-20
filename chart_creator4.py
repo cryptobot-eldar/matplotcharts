@@ -105,5 +105,5 @@ plt.title('Loss profit')
 
 plt.grid(True)
 plt.savefig('/var/www/html/images/crypto_results4.png')
-#plt.savefig('/root/PycharmProjects/cryptobot/webinterface/static/crypto_results4.png')
+plt.savefig('/root/PycharmProjects/cryptobot/images/crypto_results4.png')
 plt.show()
