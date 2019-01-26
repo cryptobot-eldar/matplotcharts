@@ -4,7 +4,7 @@ import matplotlib
 matplotlib.use('Agg')
 ###
 import matplotlib.pyplot as plt
-
+import os
 
 with open('data/out5.csv', 'r') as myfile:
     #market=myfile.read().replace('\n', ' ')
@@ -37,8 +37,12 @@ ax.legend()
 fig.tight_layout()
 plt.grid(True)
 plt.savefig('/var/www/html/images/crypto_results3.png')
+os.remove("data/out5.csv")
+os.remove("data/out6.csv")
+os.remove("data/out7.csv")
+print("Files Removed!")
 #plt.savefig('/root/PycharmProjects/cryptobot/images/crypto_results3.png')
-plt.show()
+#plt.show()
 
 
 

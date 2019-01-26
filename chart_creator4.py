@@ -4,7 +4,7 @@ import sys
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
+import os
 
 with open('data/out8.csv', 'r') as myfile:
     market=myfile.read().splitlines()
@@ -105,5 +105,17 @@ plt.title('Loss profit')
 
 plt.grid(True)
 plt.savefig('/var/www/html/images/crypto_results4.png')
+
+os.remove("data/out8.csv")
+os.remove("data/out10.csv")
+os.remove("data/out11.csv")
+os.remove("data/out12.csv")
+os.remove("data/out13.csv")
+os.remove("data/out14.csv")
+os.remove("data/out15.csv")
+os.remove("data/out16.csv")
+os.remove("data/out17.csv")
+os.remove("data/out-max.csv")
+print("Files Removed!")
 #plt.savefig('/root/PycharmProjects/cryptobot/images/crypto_results4.png')
-plt.show()
+#plt.show()

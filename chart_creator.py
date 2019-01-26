@@ -11,6 +11,7 @@ import MySQLdb
 import pandas as pd
 import pymysql
 from sqlalchemy import create_engine
+import os
 
 
 
@@ -41,5 +42,7 @@ plt.ylabel("Profit %")
 plt.xlabel("Trades")
 plt.grid(True)
 plt.savefig('/var/www/html/images/crypto_results.png', bbox_inches='tight')
+os.remove("data/out.csv")
+print("File Removed!")
 #plt.savefig('/root/PycharmProjects/cryptobot/images/crypto_results.png', bbox_inches='tight')
 #plt.show()
