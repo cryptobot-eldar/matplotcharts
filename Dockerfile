@@ -6,7 +6,8 @@ RUN yum install gcc-c++ libfreetype6-dev freetype-devel libpng-dev httpd-2.4.6 p
 COPY httpd.conf /etc/httpd/conf
 RUN rm -rf /var/www/html/index.html
 RUN pip install -r requirements.txt
-RUN timedatectl set-timezone Europe/Warsaw
+RUN rm -rf /etc/localtime
+RUN ln -s /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 RUN chmod +x start.sh service0.sh service1.sh service2.sh service3.sh service4.sh
 CMD mkdir /run/httpd ; /usr/sbin/httpd -D FOREGROUND
 ENTRYPOINT ["/usr/local/bin/start.sh"]
