@@ -12,6 +12,7 @@ fi
 /usr/sbin/httpd
 
 
+./restart.sh &
 ./service0.sh &
 ./service1.sh &
 ./service2.sh &
